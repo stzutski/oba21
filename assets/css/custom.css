@@ -1,0 +1,73 @@
+/* Show it is fixed to the top */
+body {
+  padding-top: 4.5rem;
+}
+.text-red{color:red;}
+.form-box{
+margin:0px auto!important;
+width:90%!important;
+border:1px #ccc solid;
+padding:10px;
+border-radius: 10px;
+-webkit-box-shadow: 4px 5px 5px -3px #000000; 
+box-shadow: 4px 5px 5px -3px #000000;
+}
+.form-box-ajax{
+margin:10px auto!important;
+width:95%!important;
+border:1px #ccc solid;
+padding:10px;
+border-radius: 10px;
+-webkit-box-shadow: 4px 5px 5px -3px #000000; 
+box-shadow: 4px 5px 5px -3px #000000;
+
+}
+
+.upper{text-transform:uppercase;}
+
+.lista-box{
+margin:0px auto!important;
+width:90%!important;
+border:0px #ccc solid;
+padding:10px;
+}
+
+fieldset{
+border:1px #ccc solid;
+border-radius: 10px;
+padding:10px;
+}
+legend{
+display:inline!important;
+width:auto!important;
+}
+
+.inset-box-white{
+margin:0px auto!important;
+border:0px #ccc solid;
+padding:10px;
+background:#fff;
+}
+
+.inset-box-gray{
+margin:0px auto!important;
+border:1px #ccc solid;
+padding:10px;
+background:#E9ECEF;
+}
+.alert{
+text-align:justify!important;
+}
+.btn-reset-form{width:100%;}
+.btn-cad-item{width:100%;}
+.btn-remove-form{width:100%;}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
