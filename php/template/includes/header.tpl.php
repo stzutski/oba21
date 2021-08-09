@@ -1,9 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-<!--
-    <base href="<?php // echo $_app_path;?>">
--->
+    <base href="<?php echo APP_PATH;?>">
     <title>OBV21</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -20,6 +18,7 @@
     <link rel="stylesheet" href="assets/fancybox/jquery.fancybox.css">
     <link rel="stylesheet" href="assets/css/alertify.default.css">
     <link rel="stylesheet" href="assets/css/estilos.css?ver=<?php echo time();?>">
+    <link rel="stylesheet" href="assets/css/login.css?ver=<?php echo time();?>">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">

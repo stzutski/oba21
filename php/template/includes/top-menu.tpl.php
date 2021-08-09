@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color:#E9ECEF;">
-  <a class="navbar-brand" href="#">OBV21</a>
+  <a class="navbar-brand" href="<?php echo APP_PATH;?>">OBV21</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -8,7 +8,7 @@
   <ul class="navbar-nav mr-auto">
     
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="<?php echo APP_PATH;?>">Home</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -17,19 +17,19 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownL">
               <a class="dropdown-item" href="login">Login</a>
-              <a class="dropdown-item" href="login">Rec Senha</a>
-              <a class="dropdown-item" href="login">Senha atualizada</a>
-              <a class="dropdown-item" href="login">Cadastro</a>
-              <a class="dropdown-item" href="login">Confirme seu email</a>
+              <a class="dropdown-item" href="recuperar-acesso">Rec Senha</a>
+              <a class="dropdown-item" href="senha-atualizada">Senha atualizada</a>
+              <a class="dropdown-item" href="cadastro">Cadastro</a>
+              <a class="dropdown-item" href="confirmar-email">Confirme seu email</a>
+              <a class="dropdown-item" href="painel">DashBoard</a>
+              <a class="dropdown-item" href="servicos">Escolha o Servicos</a>
+              <a class="dropdown-item" href="servicos-configuracao">Configurar Servico</a>
+              <a class="dropdown-item" href="cobrancas-configuracao">Dados de Cobrança</a>
+              <a class="dropdown-item" href="cobrancas-gerenciar">Gerar Cobrança</a>
+              <a class="dropdown-item" href="ficha-cadastral">Form Perfil (auto-save)</a>
+              <a class="dropdown-item" href="meus-arquivos-upload">Upload IRPF</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="">DashBoard</a>
-              <a class="dropdown-item" href="">Escolha o Servicos</a>
-              <a class="dropdown-item" href="">Configurar Servico</a>
-              <a class="dropdown-item" href="">Dados de Cobrança</a>
-              <a class="dropdown-item" href="">Gerar Cobrança</a>
-              <a class="dropdown-item" href="">Form Perfil (auto-save)</a>
-              <a class="dropdown-item" href="">Upload IRPF</a>
-              <a class="dropdown-item" href="">Meus Arquivos</a>
+              <a class="dropdown-item" href="meus-arquivos">Meus Arquivos</a>
             </div>
         </li>
 
@@ -38,7 +38,7 @@
                 <i class="fas fa-user"></i> Admin
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownR">
-              <a class="dropdown-item" href="">DashBoard</a>
+              <a class="dropdown-item" href="painel">DashBoard</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="login">Cadastros</a>
               <a class="dropdown-item" href="login">Rec Senha</a>
