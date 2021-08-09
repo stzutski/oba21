@@ -1,0 +1,15 @@
+{
+    "name": "actoweb/oba21",
+    "description": "Admin Oba",
+    "type": "project",
+    "authors": [
+        {
+            "name": "actoweb",
+            "email": "contato@actoweb.com.br"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+    	"slim/slim":"2.0"
+    }
+}
