@@ -32,8 +32,8 @@
     
     
     include_once('php/template/includes/header.tpl.php');
-    include_once('php/template/includes/top-menu.tpl.php');
-    echo 'recuperar senha de acesso';
+    //include_once('php/template/includes/top-menu.tpl.php');
+    include_once('php/template/includes/form-lost.login.tpl.php');
     include_once('php/template/includes/footer.tpl.php');
     
   });     
@@ -43,8 +43,8 @@
     
     
     include_once('php/template/includes/header.tpl.php');
-    include_once('php/template/includes/top-menu.tpl.php');
-    echo 'senha atualizada com sucesso';
+    //include_once('php/template/includes/top-menu.tpl.php');
+    include_once('php/template/includes/pwd-recovery.tpl.php');
     include_once('php/template/includes/footer.tpl.php');
     
   });     
@@ -54,8 +54,21 @@
     
     
     include_once('php/template/includes/header.tpl.php');
-    include_once('php/template/includes/top-menu.tpl.php');
-    echo 'cadastro de usuario';
+    //include_once('php/template/includes/top-menu.tpl.php');
+    //echo 'cadastro de usuario';
+    include_once('php/template/includes/form.cadastro-inicial.tpl.php');
+    include_once('php/template/includes/footer.tpl.php');
+    
+  });     
+    
+  
+  $app->get('/politicas', function () {
+    
+    
+    include_once('php/template/includes/header.tpl.php');
+    //include_once('php/template/includes/top-menu.tpl.php');
+    //echo 'cadastro de usuario';
+    include_once('php/template/includes/politicas.tpl.php');
     include_once('php/template/includes/footer.tpl.php');
     
   });     
@@ -65,8 +78,21 @@
     
     
     include_once('php/template/includes/header.tpl.php');
-    include_once('php/template/includes/top-menu.tpl.php');
-    echo 'confirmar email do usuario';
+    //include_once('php/template/includes/top-menu.tpl.php');
+    //echo 'confirmar email do usuario';
+    include_once('php/template/includes/msg.confirme.email.tpl.php');
+    include_once('php/template/includes/footer.tpl.php');
+    
+  });     
+    
+  
+  $app->get('/confirmar-email/resend', function () {
+    
+    
+    include_once('php/template/includes/header.tpl.php');
+    //include_once('php/template/includes/top-menu.tpl.php');
+    //echo 'confirmar email do usuario';
+    include_once('php/template/includes/resend.msg.confirme.email.tpl.php');
     include_once('php/template/includes/footer.tpl.php');
     
   });     

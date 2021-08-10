@@ -8,6 +8,7 @@
     <!-- Icon -->
     <div>
       <p class="plogo"><a href="<?php echo APP_PATH;?>"><img src="assets/images/logo-login.png" /></a></p>
+      <p class="fadeIn pspace"><small><b>Confira sua caixa de entrada</b>, enviamos sua nova senha para o email cadastrado. Confira também na pasta SPAM ou PUBLICIDADE as vezes chega por lá ;)</small></p>
     </div>
 
     <!-- Login Form -->

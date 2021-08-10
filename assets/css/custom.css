@@ -3,6 +3,9 @@ body {
   padding-top: 4.5rem;
 }
 .text-red{color:red;}
+.color-red{color:red!important;}
+.no-show{display:none!important;}
+.cookiealert{}
 .form-box{
 margin:0px auto!important;
 width:90%!important;

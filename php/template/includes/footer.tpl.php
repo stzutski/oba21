@@ -1,5 +1,20 @@
+    <!-- START Bootstrap-Cookie-Alert -->
+    <div class="alert text-center cookiealert" role="alert">
+        <b>Usamos cookies!</b> &#x1F36A; Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. <a href="https://cookiesandyou.com/" target="_blank">Saber mais</a>
 
+        <button type="button" class="btn btn-primary btn-sm acceptcookies">
+            Eu aceito
+        </button>
+    </div>
+    <!-- END Bootstrap-Cookie-Alert -->
+
+    <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
     <script>
+      window.addEventListener("cookieAlertAccept", function() {
+          console.log("cookies accepted");
+      })      
+      
+      
     //var pathApp = '<?php // echo $_app_path;?>';
     </script>
     <!-- Optional JavaScript; choose one of the two! -->

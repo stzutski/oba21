@@ -2,12 +2,15 @@
 /* BASIC */
 
 html {
+/*
   background-color: #56baed;
+*/
 }
 
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
+  padding-top:10px;
 }
 
 a {
@@ -53,6 +56,19 @@ h2 {
   -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   text-align: center;
+}
+
+#politicsContent {
+  margin:0px auto;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 10px;
+  width: 90%;
+  max-width: 90%;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.3);
+  text-align: left;
 }
 
 #formFooter {
@@ -260,3 +276,6 @@ input[type=text]:placeholder {
 #icon {
   width:60%;
 }
+
+.plogo{padding:20px 0px 0px 0px;}
+.pspace{padding:20px;}

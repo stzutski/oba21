@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color:#E9ECEF;">
-  <a class="navbar-brand" href="<?php echo APP_PATH;?>">OBV21</a>
+  <a class="navbar-brand" href="<?php echo APP_PATH;?>"><img src="assets/images/logo-login.png" /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -20,6 +20,7 @@
               <a class="dropdown-item" href="recuperar-acesso">Rec Senha</a>
               <a class="dropdown-item" href="senha-atualizada">Senha atualizada</a>
               <a class="dropdown-item" href="cadastro">Cadastro</a>
+              <a class="dropdown-item" href="politicas">Políticas de Privacidade</a>
               <a class="dropdown-item" href="confirmar-email">Confirme seu email</a>
               <a class="dropdown-item" href="painel">DashBoard</a>
               <a class="dropdown-item" href="servicos">Escolha o Servicos</a>
@@ -54,13 +55,13 @@
         <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
                 <a class="nav-link" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <b>
-                    <i class="fas fa-chevron-down"></i></b>
+                  <b><i class="fas fa-user"></i><span class="badge badge-danger">9</span></b>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="mod/perfil"><i class="fa fa-user" aria-hidden="true"></i> Perfil</a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-lock" aria-hidden="true"></i> Alterar Senha</a>
-                    <a class="dropdown-item" href="user/logout"><i class="fas fa-sign-out-alt" aria-hidden="true"></i> Logout</a>
+                    <a class="dropdown-item" href="avisos"><i class="fas fa-envelope"></i> Avisos<span class="badge badge-danger">9</span></a>
+                    <a class="dropdown-item" href="meus-dados"><i class="fa fa-user" aria-hidden="true"></i> Perfil</a>
+                    <a class="dropdown-item" href="alterar-senha"><i class="fa fa-lock" aria-hidden="true"></i> Alterar Senha</a>
+                    <a class="dropdown-item" href="logout"><i class="fas fa-sign-out-alt" aria-hidden="true"></i> Logout</a>
                 </div>
             </li>
         </ul>
