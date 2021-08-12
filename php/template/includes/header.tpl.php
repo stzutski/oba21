@@ -9,10 +9,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/bootstrap-table.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-table-sticky-header.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-table-reorder-rows.min.css">
-    <link rel="stylesheet" href="assets/css/jquery.resizableColumns.css">
     <link rel="stylesheet" href="assets/css/alertify.css">
     <link rel="stylesheet" href="assets/fancybox/jquery.fancybox.css">
     <link rel="stylesheet" href="assets/css/alertify.default.css">
@@ -20,6 +16,9 @@
     <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/estilos.css?ver=<?php echo time();?>">
+    <?php if(arrayVar($_md,'modulo')!='' && arrayVar($_md,'estilos')!=''){?>
+    <link rel="stylesheet" href="<?php echo incMod('css',arrayVar($_md,'modulo'),arrayVar($_md,'estilos'),false,true);?>">
+    <?php }?>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">

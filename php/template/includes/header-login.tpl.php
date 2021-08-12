@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="assets/fancybox/jquery.fancybox.css">
     <link rel="stylesheet" href="assets/css/alertify.default.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+<!--
     <link rel="stylesheet" href="assets/css/custom.css">
+-->
     <link rel="stylesheet" href="assets/css/estilos.css?ver=<?php echo time();?>">
     <link rel="stylesheet" href="assets/css/login.css?ver=<?php echo time();?>">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">

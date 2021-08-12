@@ -4,71 +4,78 @@
   require_once('vendor/autoload.php');
 
   $_page='';
+  $_md=array();
 
   use \Slim\Slim;
   $app = new \Slim\Slim();  
   
   $app->get('/', function () {
     //echo 'inicial';
+
+  $_page='';
+  $_md=array();
     
-    include_once('php/template/includes/header-login.tpl.php');
+    include_once('php/template/includes/header.tpl.php');
     include_once('php/template/includes/top-menu.tpl.php');
-    include_once('php/template/includes/footer-login.tpl.php');
+    include_once('php/template/includes/footer.tpl.php');
     
   });  
     
   
   $app->get('/login', function () {
     
-    
+    $_page='';
+    $_md=array();
+      
     include_once('php/template/includes/header-login.tpl.php');
-    //include_once('php/template/includes/top-menu.tpl.php');
-    include_once('php/template/includes/form.login.tpl.php');
+    include_once( incMod('form','md-login','login') );
     include_once('php/template/includes/footer-login.tpl.php');
     
   });     
   
   $app->get('/recuperar-acesso', function () {
-    
+
+    $_page='';
+    $_md=array();
     
     include_once('php/template/includes/header-login.tpl.php');
-    //include_once('php/template/includes/top-menu.tpl.php');
-    include_once('php/template/includes/form-lost.login.tpl.php');
+    include_once( incMod('form','md-login','rec-senha') );
     include_once('php/template/includes/footer-login.tpl.php');
     
   });     
     
   
   $app->get('/senha-atualizada', function () {
-    
+
+    $_page='';
+    $_md=array();
     
     include_once('php/template/includes/header-login.tpl.php');
-    //include_once('php/template/includes/top-menu.tpl.php');
-    include_once('php/template/includes/pwd-recovery.tpl.php');
+    include_once( incMod('form','md-login','login-recuperado') );
     include_once('php/template/includes/footer-login.tpl.php');
     
   });     
     
   
   $app->get('/cadastro', function () {
-    
+
+    $_page='';
+    $_md=array();
     
     include_once('php/template/includes/header-login.tpl.php');
-    //include_once('php/template/includes/top-menu.tpl.php');
-    //echo 'cadastro de usuario';
-    include_once('php/template/includes/form.cadastro-inicial.tpl.php');
+    include_once( incMod('form','md-cadastro','cadastro-inicial') );
     include_once('php/template/includes/footer-login.tpl.php');
     
   });     
     
   
   $app->get('/politicas', function () {
-    
+
+    $_page='';
+    $_md=array();
     
     include_once('php/template/includes/header-login.tpl.php');
-    //include_once('php/template/includes/top-menu.tpl.php');
-    //echo 'cadastro de usuario';
-    include_once('php/template/includes/politicas.tpl.php');
+    include_once('php/template/pages/politicas.page.php');
     include_once('php/template/includes/footer-login.tpl.php');
     
   });     
@@ -76,22 +83,22 @@
   
   $app->get('/confirmar-email', function () {
     
+    $_page='';
+    $_md=array();
     
     include_once('php/template/includes/header-login.tpl.php');
-    //include_once('php/template/includes/top-menu.tpl.php');
-    //echo 'confirmar email do usuario';
-    include_once('php/template/includes/msg.confirme.email.tpl.php');
+    include_once( incMod('view','md-cadastro','msg-confirme-email') );
     include_once('php/template/includes/footer-login.tpl.php');
     
   });     
     
   
   $app->get('/confirmar-email/resend', function () {
-    
+
+    $_page='';
+    $_md=array();
     
     include_once('php/template/includes/header-login.tpl.php');
-    //include_once('php/template/includes/top-menu.tpl.php');
-    //echo 'confirmar email do usuario';
     include_once('php/template/includes/resend.msg.confirme.email.tpl.php');
     include_once('php/template/includes/footer-login.tpl.php');
     
@@ -100,6 +107,8 @@
   
   $app->get('/painel', function () {
     
+    $_page='';
+    $_md=array();
     
     include_once('php/template/includes/header.tpl.php');
     include_once('php/template/includes/top-menu.tpl.php');
@@ -111,10 +120,14 @@
   
   $app->get('/servicos', function () {
     
+    $_page  = '';
+    $_md['modulo']  = 'md-loja';
+    $_md['estilos'] = 'estilos-loja';
+    $_md['script']  = 'scripts-loja';
+    
     include_once('php/template/includes/header.tpl.php');
     include_once('php/template/includes/top-menu.tpl.php');
-    include_once('php/template/includes/servicos-escolha.tpl.php');
-    //echo 'Serviços disponíveis';
+    include_once( incMod('form','md-loja','selecione-o-servico') );
     include_once('php/template/includes/footer.tpl.php');
     
   });     
@@ -122,6 +135,8 @@
   
   $app->get('/servicos-configuracao', function () {
     
+    $_page='';
+    $_md=array();
     
     include_once('php/template/includes/header.tpl.php');
     include_once('php/template/includes/top-menu.tpl.php');
@@ -133,6 +148,8 @@
   
   $app->get('/cobrancas-configuracao', function () {
     
+    $_page='';
+    $_md=array();
     
     include_once('php/template/includes/header.tpl.php');
     include_once('php/template/includes/top-menu.tpl.php');
@@ -155,6 +172,8 @@
   
   $app->get('/ficha-cadastral', function () {
     
+    $_page='';
+    $_md=array();
     
     include_once('php/template/includes/header.tpl.php');
     include_once('php/template/includes/top-menu.tpl.php');
@@ -166,6 +185,8 @@
   
   $app->get('/meus-arquivos-upload', function () {
     
+    $_page='';
+    $_md=array();
     
     include_once('php/template/includes/header.tpl.php');
     include_once('php/template/includes/top-menu.tpl.php');
@@ -177,6 +198,8 @@
   
   $app->get('/meus-arquivos', function () {
     
+    $_page='';
+    $_md=array();
     
     include_once('php/template/includes/header.tpl.php');
     include_once('php/template/includes/top-menu.tpl.php');

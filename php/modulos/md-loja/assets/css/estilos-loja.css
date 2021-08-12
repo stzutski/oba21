@@ -1,0 +1,22 @@
+/*
+ * css loja
+ * */
+
+.label-booking{
+  color:#317E9A;
+  padding-left:15px;
+}
+.helpft{
+  padding:0px;
+}
+.noFmargin{
+  margin-bottom:0px;
+}
+.btn-av-cad01{
+  margin-top:30px!important;
+  float:right;
+}
+.card-body{
+margin-bottom:0px!important;
+padding-bottom:0px!important;
+}

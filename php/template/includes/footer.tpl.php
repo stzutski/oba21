@@ -7,24 +7,18 @@
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.resizableColumns.min.js"></script>
-    <script src="assets/js/bootstrap-table.min.js"></script>
-    <script src="assets/js/tableExport.min.js"></script>
-    <script src="assets/js/jspdf.min.js"></script>
-    <script src="assets/js/jspdf.plugin.autotable.js"></script>
-    <script src="assets/js/bootstrap-table-export.min.js"></script>
-    <script src="assets/js/bootstrap-table-mobile.min.js"></script>
-    <script src="assets/js/tableExport.min.js"></script>
-    <script src="assets/js/bootstrap-table-export.min.js"></script>
-    <script src="assets/js/bootstrap-table-copy-rows.min.js"></script>
-    <script src="assets/js/bootstrap-table-reorder-rows.min.js"></script>
-    <script src="assets/js/bootstrap-table-resizable.min.js"></script>
-    <script src="assets/js/bootstrap-table-pt-BR.js"></script>
-    <script src="assets/js/bootstrap-table-sticky-header.min.js"></script>
     <script src="assets/js/alertify.min.js"></script>
     <script src="assets/js/bootstrap-datepicker.min.js"></script>
     <script src="assets/js/bootstrap-datepicker.pt-BR.min.js"></script>
     <script src="assets/fancybox/jquery.fancybox.pack.js"></script>
     <script src="assets/js/scripts.js?ver=<?php echo time();?>"></script>
+    <?php 
+    if(arrayVar($_md,'modulo')!=''&&arrayVar($_md,'script')!=''){
+    
+      echo '<script src="'.incMod('js',arrayVar($_md,'modulo'),arrayVar($_md,'script')).'"></script>';
+      
+    }
+    ?>
     <script>
     $('.datepicker').datepicker({
         format: 'dd/mm/yyyy',
