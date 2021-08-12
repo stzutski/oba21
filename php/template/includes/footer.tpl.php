@@ -1,20 +1,4 @@
-    <!-- START Bootstrap-Cookie-Alert -->
-    <div class="alert text-center cookiealert" role="alert">
-        <b>Usamos cookies!</b> &#x1F36A; Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. <a href="https://cookiesandyou.com/" target="_blank">Saber mais</a>
-
-        <button type="button" class="btn btn-primary btn-sm acceptcookies">
-            Eu aceito
-        </button>
-    </div>
-    <!-- END Bootstrap-Cookie-Alert -->
-
-    <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
     <script>
-      window.addEventListener("cookieAlertAccept", function() {
-          console.log("cookies accepted");
-      })      
-      
-      
     //var pathApp = '<?php // echo $_app_path;?>';
     </script>
     <!-- Optional JavaScript; choose one of the two! -->
@@ -37,8 +21,18 @@
     <script src="assets/js/bootstrap-table-pt-BR.js"></script>
     <script src="assets/js/bootstrap-table-sticky-header.min.js"></script>
     <script src="assets/js/alertify.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.pt-BR.min.js"></script>
     <script src="assets/fancybox/jquery.fancybox.pack.js"></script>
     <script src="assets/js/scripts.js?ver=<?php echo time();?>"></script>
+    <script>
+    $('.datepicker').datepicker({
+        format: 'dd/mm/yyyy',
+        language: "pt-BR",
+        daysOfWeekHighlighted: "0",
+        autoclose: true
+    });
+    </script>    
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

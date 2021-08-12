@@ -8,7 +8,11 @@
     <!-- Icon -->
     <div>
       <p class="plogo"><a href="<?php echo APP_PATH;?>"><img src="assets/images/logo-login.png" /></a></p>
-      <p class="fadeIn pspace"><small><b>Confira sua caixa de entrada</b>, COMPLETAR enviamos sua nova senha para o email cadastrado. Confira também na pasta <b>SPAM</b> ou <b>PUBLICIDADE</b> as vezes chega por lá ;)</small></p>
+      <p class="fadeIn pspace"><small><b>Confira sua caixa de entrada</b>, COMPLETAR enviamos sua nova senha para o email cadastrado. Confira também na pasta <b>SPAM</b> ou <b>PUBLICIDADE</b> as vezes chega por lá ;)</small>
+      <br />
+      <br />
+      Já recebeu <a href="servicos">clique aqui</a>
+      </p>
     </div>
 
 

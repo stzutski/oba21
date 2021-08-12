@@ -34,6 +34,7 @@
             </div>
         </li>
 
+<!--
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownR" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-user"></i> Admin
@@ -48,6 +49,7 @@
               <a class="dropdown-item" href="login">Confirme seu email</a>
             </div>
         </li>
+-->
     
   </ul>
   </div>

@@ -11,7 +11,7 @@
     </div>
 
     <!-- Login Form -->
-    <form>
+    <form method="get" action="confirmar-email">
       <input type="text" id="login" class="fadeIn" name="login" placeholder="Nome">
       <input type="text" id="login" class="fadeIn" name="login" placeholder="Sobrenome">
       <input type="text" id="login" class="fadeIn" name="login" placeholder="Seu Email">
@@ -20,7 +20,7 @@
       <br /><small class="color-red no-show">Email CPF já esta em uso!</small>
       <input type="text" id="password" class="fadeIn" name="login" placeholder="Senha">
       <input type="text" id="password" class="fadeIn" name="login" placeholder="Confirme a senha">
-      <input type="submit" value="Acessar">
+      <input type="submit" value="Enviar Dados">
     </form>
 
     <!-- Remind Passowrd -->

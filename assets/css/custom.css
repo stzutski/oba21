@@ -1,6 +1,11 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
+
+
 /* Show it is fixed to the top */
 body {
   padding-top: 4.5rem;
+  height: 100vh;
 }
 .text-red{color:red;}
 .color-red{color:red!important;}
@@ -74,3 +79,35 @@ text-align:justify!important;
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
+
+
+
+/*
+ * tela selecao e configuracao do servico
+ * */
+.service-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+#service-wrapperContent{
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 700px;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+}
+.ticket{text-align:left;}
+
+.deps{padding:0px 10px;}
+.tempass{padding-top:10px!important;}
