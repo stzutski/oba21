@@ -10,13 +10,16 @@
   $app = new \Slim\Slim();  
   
   $app->get('/', function () {
-    //echo 'inicial';
 
-  $_page='';
-  $_md=array();
+    $recurso='home';
+    $_page  = '';
+    $_md['modulo']  = 'md-loja';
+    $_md['estilos'] = 'estilos-dashboard';
+    $_md['script']  = 'scripts-dashboard';
     
     include_once('php/template/includes/header.tpl.php');
     include_once('php/template/includes/top-menu.tpl.php');
+    include_once( incMod('view','md-dashboard','dashboard') );
     include_once('php/template/includes/footer.tpl.php');
     
   });  
@@ -105,14 +108,16 @@
   });     
     
   
-  $app->get('/painel', function () {
+  $app->get('/painel(/)(/:recurso)', function ($recurso='home') {
     
-    $_page='';
-    $_md=array();
+    $_page  = '';
+    $_md['modulo']  = 'md-dashboard';
+    $_md['estilos'] = 'estilos-dashboard';
+    $_md['script']  = 'scripts-dashboard';
     
     include_once('php/template/includes/header.tpl.php');
     include_once('php/template/includes/top-menu.tpl.php');
-    echo 'painel do usuario';
+    include_once( incMod('view','md-dashboard','dashboard') );
     include_once('php/template/includes/footer.tpl.php');
     
   });     
@@ -131,6 +136,24 @@
     include_once('php/template/includes/footer.tpl.php');
     
   });     
+    
+  
+  $app->get('/servicos-configurar/dependentes', function () {
+    
+    $_page  = '';
+    $_md['modulo']  = 'md-loja';
+    $_md['estilos'] = 'estilos-loja';
+    $_md['script']  = 'scripts-loja';
+    
+    include_once('php/template/includes/header.tpl.php');
+    include_once('php/template/includes/top-menu.tpl.php');
+    include_once( incMod('form','md-loja','configurar-dependentes') );
+    include_once('php/template/includes/footer.tpl.php');
+    
+  });     
+    
+    
+    
     
   
   $app->get('/servicos-configuracao', function () {

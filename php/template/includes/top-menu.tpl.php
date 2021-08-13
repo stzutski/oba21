@@ -24,7 +24,7 @@
               <a class="dropdown-item" href="confirmar-email">Confirme seu email</a>
               <a class="dropdown-item" href="painel">DashBoard</a>
               <a class="dropdown-item" href="servicos">Escolha o Servicos</a>
-              <a class="dropdown-item" href="servicos-configuracao">Configurar Servico</a>
+              <a class="dropdown-item" href="servicos-configurar/dependentes">Configurar Servico > dependentes</a>
               <a class="dropdown-item" href="cobrancas-configuracao">Dados de Cobrança</a>
               <a class="dropdown-item" href="cobrancas-gerenciar">Gerar Cobrança</a>
               <a class="dropdown-item" href="ficha-cadastral">Form Perfil (auto-save)</a>

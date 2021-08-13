@@ -1,0 +1,36 @@
+/*
+ * css dashboard
+ * */
+ .color-blue{color:blue!important;}
+ .color-red{color:red!important;}
+ 
+.al-center{text-align:center!important;}
+
+.btn-accord{font-size:12pt!important;}
+
+
+.card-accord{padding:5px 30px!important;}
+
+
+.btn-accord {
+    color:#000!important;
+    opacity:0.8;
+    background:#c4c4c4!important;
+}
+.btn-accord:hover {
+color:#fff!important;
+    opacity:0.9;
+    text-decoration:none;
+}
+.btn-accord:active {
+color:#fff!important;
+    text-decoration:none;
+}
+.btn-accord:focus {
+color:#fff!important;
+    text-decoration:none;
+}
+.btn-accord:visited {
+color:#fff!important;
+    text-decoration:none !important;
+}
