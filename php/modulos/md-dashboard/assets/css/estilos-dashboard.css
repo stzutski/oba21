@@ -1,6 +1,12 @@
 /*
  * css dashboard
  * */
+ 
+/*main*/ 
+.content-dashboard{width:90%!important;} 
+.vsp { margin-top:20px; }
+ 
+ 
  .color-blue{color:blue!important;}
  .color-red{color:red!important;}
  
@@ -34,3 +40,169 @@ color:#fff!important;
 color:#fff!important;
     text-decoration:none !important;
 }
+
+
+
+/* stepper*/
+
+.stepper{
+  width:100%;
+  background:none;
+  display:flex;
+  padding:0px;
+  margin:0px;
+}
+.stepper li{
+  list-style-type:none;
+  background:none;
+  width:20%;
+  text-align:center;
+  padding:20px 0;
+  position:relative;
+}
+.stepper li a{color:black;}
+.stepper li:before{
+  content:'';
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  background:#000;
+  display:block;
+  margin:0 auto;
+  border:5px solid #eee;
+  margin-top:-2px;
+  z-index:2;
+}
+.stepper li.queue:before{ 
+  font-family: "FontAwesome";
+  content:'\f068';   
+  background:#999;
+  color:#fff;
+  padding-top:0px;
+}
+.stepper li.queue > a{color:#999;}
+
+.stepper li.done:before{ 
+  font-family: "FontAwesome";
+  content:'\f00c'; 
+  background:#5CB85C;
+  color:#fff;
+}
+.stepper li.done > a{color:#5CB85C;}
+
+
+
+.stepper li.active:before{
+  font-family: "FontAwesome";
+  content:'\f021'; 
+  background:#5BC0DE;
+  color:#fff;
+  vertical-align: middle;
+}
+.stepper li.active > a{color:#5BC0DE;}
+
+/* track */
+.stepper li a:after{
+
+content:'';
+position:absolute;
+top:32px;
+left:-45%;
+width:100%;
+height:5px;
+background:#eee;
+z-index:-1;
+}
+.stepper li:first-child > a:after{
+content: none;
+}
+
+
+ul.stepper > li:nth-child(2) > a:nth-child(1):after{background:#5CB85C;}
+ul.stepper > li:nth-child(3) > a:nth-child(1):after{background:#5CB85C;}
+
+
+
+/* end stepper*/
+
+
+
+
+
+
+
+
+
+
+
+/* myTasks */
+
+.taskList{
+counter-reset:step;
+}
+
+.taskList>div{
+  display:block;
+  padding:8px 0px 30px 11px;
+  position:relative;
+  color:#fff;
+}
+
+.taskList>div:last-child:before{
+content: none;
+}
+
+.taskList>div:before{
+  content:'';
+  width:4px;
+  height:100px;
+  background:#eee;
+  display:inline-block;
+  position:absolute;
+  left:19px;
+  top:0;
+  z-index:auto;
+}
+.taskList>div>span{
+padding-left:10px;
+margin:0px;
+display:inline-block;
+color:#333;
+cursor:pointer;
+}
+.taskList>div>span:hover{
+color:#5BC0DE;
+}
+.taskList > div > span:before{
+  content:counter(step);
+  counter-increment: step;
+  /*background:#5CB85C;*/
+  background:#999;
+  border:4px solid #eee;
+  width:40px;
+  height:40px;
+  display:inline-block;
+  border-radius:50%;
+  position:absolute;
+  left:0px;
+  top:0px;
+  z-index:auto;
+  color:#fff;
+  text-align: center;
+  padding-top: 4px;  
+}
+.taskList>div.done:before{
+  background:#5CB85C;
+}
+.taskList > div.done > span:before{
+  background:#5CB85C;
+}
+.info-st{
+  display:none;
+  color:#333;
+  padding-left:30px;
+}
+
+
+
+/* end myTasks */
